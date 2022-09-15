@@ -1,1 +1,1 @@
-my readme file
+This is the directory for debugging
