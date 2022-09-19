@@ -1,19 +1,27 @@
 #include "main.h"
 
 /**
- * _puts - print a given string to screen
+ * rev_string - prints given string in reverse
+ * @s: passed pointer argument for string
  *
- * @str: passed pointer argument for string
  * Return: void
  */
-void _puts(char *str)
+void rev_string(char *s)
 {
-	int len = 0;
+	int len = 0, i, length;
+	char c;
 
-	while (*(str + len) != '\0')
+	while (*(s + len) != '\0')
 	{
-		_putchar(*(str + len));
 		len++;
 	}
-	_putchar('\n');
+	length = len;
+	len--;
+	for (i = 0; i < length / 2; i++)
+	{
+		c = *(s + i);
+		*(s + i) = *(s + len);
+		*(s + len) = c;
+		len--;
+	}
 }
