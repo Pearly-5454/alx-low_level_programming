@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * prime_check - check if s is the square root of c
+ * prime_check - verify if s is the square root of c
  * @s: parameter
- * @c: number to find if s is a prime number
+ * @c: number to find if is a prime numberr
  * Return: 1 or 0
  */
 
@@ -18,7 +18,8 @@ int prime_check(int s, int c)
 /**
  * is_prime_number - function that checks if n is a prime number
  * @n: parameter
- * Return: 1 if n is prime numb*/
+ * Return: 1 if n is prime number or 0 otherwise
+ */
 
 int is_prime_number(int n)
 {
